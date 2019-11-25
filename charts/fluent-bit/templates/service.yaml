@@ -8,6 +8,7 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+    monitor: "true"
 spec:
   type: {{ .Values.metrics.service.type}}
   sessionAffinity: None
